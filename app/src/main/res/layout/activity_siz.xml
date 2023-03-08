@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".siz"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goColab"
+        android:text="Colab"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#007F00"
+            android:onClick="goBack"
+            android:text="Назад"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:text="1. Общие требования охраны труда
+
+
+
+                                                            1.1. К самостоятельной работе на персональном компьютере (далее по
+тексту - ПК) допускаются лица, прошедшие медицинский осмотр и не имеющие
+противопоказаний для работы на ПК, инструктаж по охране труда, обучение
+безопасным методам выполнения работ, проверку знаний требований охраны труда,
+имеющие 1 группу по электробезопасности.
+
+
+
+
+                                                                    1.2. Работник должен знать, что при выполнении работ на ПК на него могут
+оказывать воздействие следующие вредные и (или) опасные производственные
+факторы:
+- повышенная температура поверхностей ПК;
+- повышенная или пониженная температура воздуха рабочей зоны;
+- повышенное значение напряжения в электрической цепи, замыкание;
+- повышенный уровень статического электричества;
+- повышенный уровень электромагнитных излучений;
+- повышенная напряженность электрического поля;
+- отсутствие или недостаток естественного света;
+- недостаточная искусственная освещенность рабочей зоны;
+- повышенная яркость света;
+- повышенная контрастность;
+- прямая и отраженная блесткость;
+- зрительное напряжение;
+- длительные статические нагрузки;
+- монотонность трудового процесса.
+
+
+
+
+                                                                                            1.3. Санитарно-эпидемиологические требования к эксплуатации ПК и
+организации рабочих мест с ПК определены СанПиН 2.2.272.4.1340-03.
+
+
+
+
+
+
+                                1.4. При выполнении работ на персональном компьютере, работник обязан:
+- соблюдать производственную и технологическую дисциплину;
+- соблюдать режим труда и отдыха в зависимости от продолжительности, вида
+и категории трудовой деятельности;
+- выполнять только ту работу, которая определена его должностной
+инструкцией;
+- поддерживать порядок на рабочем месте в течение всего рабочего времени;
+- обо всех неисправностях ПК и электропитания немедленно сообщать
+непосредственному руководителю;
+- соблюдать требования пожарной безопасности и электробезопасности.
+1.5. За нарушение требований охраны труда работник привлекается к
+ответственности в порядке, установленном законодательством РФ."/>
+
+
+        </ScrollView>
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
