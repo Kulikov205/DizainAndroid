@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HyperPC"
         tools:targetApi="31">
-
         <activity
             android:name=".sborka"
             android:exported="false" />
@@ -52,9 +51,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <activity android:name=".MainActivity"
+            android:exported="true"/>
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".Splashscreen"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

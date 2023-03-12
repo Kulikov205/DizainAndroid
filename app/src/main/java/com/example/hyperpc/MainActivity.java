@@ -63,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+
+
     public void goFlow(View v){
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Kulikov205/Glas"));
         startActivity(browserIntent);
