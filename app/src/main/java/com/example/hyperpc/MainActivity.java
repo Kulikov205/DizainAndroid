@@ -2,11 +2,12 @@ package com.example.hyperpc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ComponentName;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
-
+import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +16,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        //Запуск APK
+        Button button = findViewById(R.id.button19);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_LAUNCHER);
+                intent.setComponent(new ComponentName("com.example.kontur", "com.example.kontur.MainActivity"));
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void startNewActivity(View v) {
@@ -61,10 +77,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, sborka.class);
         startActivity(intent);
     }
-
-
-
-
 
     public void goFlow(View v){
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Kulikov205/Glas"));
