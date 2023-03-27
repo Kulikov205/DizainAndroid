@@ -17,20 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        //Запуск APK
-        Button button = findViewById(R.id.button19);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_MAIN);
-                intent.addCategory(Intent.CATEGORY_LAUNCHER);
-                intent.setComponent(new ComponentName("com.example.kontur", "com.example.kontur.MainActivity"));
-                startActivity(intent);
-            }
-        });
-
     }
 
     public void startNewActivity(View v) {
